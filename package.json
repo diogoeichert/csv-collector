@@ -1,0 +1,25 @@
+{
+  "name": "csv-collector",
+  "version": "0.0.0",
+  "description": "CSV parser that handles broken input",
+  "main": "index.js",
+  "scripts": {
+		"test": "eslint --fix . && node ./src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoeichert/csv-collector.git"
+  },
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/csv-collector/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/csv-collector#readme",
+  "devDependencies": {
+    "eslint-config-classic": "^1.8.4"
+	},
+	"eslintConfig": {
+		"extends": "classic"
+  }
+}
