@@ -1,6 +1,6 @@
 {
 	"name": "csv-collector",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "CSV parser that handles broken input",
 	"main": "index.js",
 	"scripts": {
