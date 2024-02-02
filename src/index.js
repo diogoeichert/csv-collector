@@ -29,8 +29,13 @@ function reconcileRemainingLines(lines, numberOfFields) {
 	return result;
 }
 
-function collectCSV(string) {
-	const rawLines = string.split(LINE_BREAK_PATTERN);
+/**
+ * Returns a collection of tuples parsed from the CSV content
+ * @param {string} content CSV content with header
+ * @returns {Array<Object>} Array of objects parsed from the content
+ */
+function collectCSV(content) {
+	const rawLines = content.split(LINE_BREAK_PATTERN);
 	const header = rawLines.shift();
 	const fields = header.split(SEPARATOR);
 	const numberOfFields = fields.length;
